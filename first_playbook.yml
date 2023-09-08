@@ -1,0 +1,10 @@
+---
+- name: first playbook test
+  hosts: clustor.virtnet.dup
+  tasks:
+    - name: Get uptime from server
+        ansible.builtin.command: uptime
+        register: serveruptime
+    - name: display uptime
+        ansible.builtin.debug:
+          msg: '{{ serveruptime }}'
