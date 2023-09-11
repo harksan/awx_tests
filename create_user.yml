@@ -1,0 +1,12 @@
+---
+- name: Create users by passing vars to playbook with awx
+  hosts: all
+  tasks:
+    - name: "create {{ username }} in {{ homedir }}"
+      ansible.builtin.user:
+        name: "{{ username }}"
+        state: present
+        comment: "{{ username }} is paździerz"
+        shell: /bin/bash
+        home: "{{ homedir }}"
+        uid: 6666
