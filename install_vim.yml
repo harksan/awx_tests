@@ -1,0 +1,10 @@
+---
+- name: install vim package in some servers
+  hosts: all
+  tasks:
+    - name: install vim-common
+      ansible.builtin.package:
+        name:
+          - vim
+          - vim-common
+        state: present
