@@ -1,6 +1,6 @@
 ---
 - name: Create users by passing vars to playbook with awx
-  hosts: all
+  hosts:  LeftSide
   tasks:
     - name: "create {{ username }} in {{ homedir }}"
       ansible.builtin.user:
