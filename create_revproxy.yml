@@ -1,7 +1,7 @@
 ---
 - name: setup reverse proxy
   hosts: all
-  vars:
-    src_port: 80
-  roles:
-    -  reverse-proxy-role
+  tasks:
+    - name: Create reverse proxy server
+      ansible.builtin.include_role:
+        name: reverse-proxy-role
