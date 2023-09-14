@@ -1,4 +1,4 @@
 ---
 - name: reverse-proxy-role
-  src: ssh+https://github.com/harksan/rev_proxy.git
+  src: https://github.com/harksan/reverse-proxy-role.git
   version: origin/main
