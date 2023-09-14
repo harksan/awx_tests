@@ -1,4 +1,4 @@
 ---
 - name: reverse-proxy-role
-  src: ssh+https://github.com/harksan/ansible-roles.github
+  src: ssh+https://github.com/harksan/rev_proxy.git
   version: origin/main

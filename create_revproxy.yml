@@ -1,0 +1,7 @@
+---
+- name: setup reverse proxy
+  hosts: all
+  vars:
+    src_port: 80
+  roles:
+    -  rev_proxy
