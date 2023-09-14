@@ -4,4 +4,4 @@
   vars:
     src_port: 80
   roles:
-    -  rev_proxy
+    -  reverse-proxy-role
