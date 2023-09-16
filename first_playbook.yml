@@ -1,6 +1,6 @@
 ---
 - name: first playbook test
-  hosts: clustor.virtnet.dup
+  hosts: all
   tasks:
     - name: Get uptime from server
       ansible.builtin.command: uptime
