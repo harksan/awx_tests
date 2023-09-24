@@ -1,4 +1,5 @@
 ---
 - name: reverse-proxy-role
+  scm: git
   src: https://github.com/harksan/reverse-proxy-role.git
   version: origin/main
